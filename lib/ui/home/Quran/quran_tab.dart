@@ -14,6 +14,8 @@ class QuranTab extends StatelessWidget {
     ,"التين","العلق","القدر","البينة","الزلزلة","العاديات","القارعة","التكاثر","العصر",
     "الهمزة","الفيل","قريش","الماعون","الكوثر","الكافرون","النصر","المسد","الإخلاص","الفلق","الناس"];
 
+  QuranTab({super.key});
+
   @override
   Widget build(BuildContext context) {
 return
