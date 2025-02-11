@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_islam_app/ui/HadethDetailes/Hadeth_details_screen.dart';
+import 'package:test_islam_app/ui/home/Tasbeh/tasbeh_tab.dart';
 import 'package:test_islam_app/ui/home/home_screen.dart';
 
 import 'ui/ChapterDetiles/chapter_detiles_screen.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             seedColor: Color(0xffB7935F),
                 primary: Color(0xffB7935F),
           onPrimary: Colors.white,
-          secondary: Color(0xffBb935F)
+          secondary: Color(0xffB7935F),
 
         ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -45,9 +46,11 @@ class MyApp extends StatelessWidget {
       routes: {
         HomeScreen.routName:(_)=>HomeScreen(),
         ChapterDetilesScreen.routName:(context)=>ChapterDetilesScreen(),
-        HadethDetailsScreen.routName:(context)=>HadethDetailsScreen()
+        HadethDetailsScreen.routName:(context)=>HadethDetailsScreen(),
+        TasbehTab.routName:(context)=>TasbehTab()
       },
       initialRoute: HomeScreen.routName,
+
     );
   }
 }
