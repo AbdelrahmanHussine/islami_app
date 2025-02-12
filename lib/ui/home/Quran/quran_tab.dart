@@ -23,6 +23,7 @@ return
     children: [
       Expanded(flex: 1,
           child: Image(image: AssetImage('assets/images/qur2an_screen_logo.png'))),
+      Text('Chapter Name',style: TextStyle(fontSize: 30,color: Colors.white),),
       Expanded(flex: 3,
         child: ListView.separated(
             itemBuilder: (context, index) {
@@ -32,7 +33,7 @@ return
             },
             separatorBuilder: (context, index) {
               return Container(
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).dividerColor,
                 width: double.infinity,
                 height: 2,
                 margin: EdgeInsets.symmetric(horizontal: 60),

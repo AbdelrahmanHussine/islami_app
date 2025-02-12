@@ -17,7 +17,7 @@ class ChapterTitleHadeth extends StatelessWidget {
       child: Container(
         alignment: Alignment.center,
         margin: EdgeInsets.all(10),
-        child: Text(hadeth.title,style: TextStyle(fontSize: 24,color: Colors.black),),
+        child: Text(hadeth.title,style: TextStyle(fontSize: 24,color: Colors.white),),
         
       ),
     );
