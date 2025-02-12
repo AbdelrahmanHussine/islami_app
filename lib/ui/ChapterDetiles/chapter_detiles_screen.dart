@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:test_islam_app/ui/ChapterDetiles/verses_widget.dart';
+import 'package:test_islam_app/ui/MyThemData.dart';
 
 class ChapterDetilesScreen extends StatefulWidget {
   static const String routName='ChpterDetiles';
@@ -22,7 +23,9 @@ class _ChapterDetilesScreenState extends State<ChapterDetilesScreen> {
       decoration: BoxDecoration(
 
         image: DecorationImage(fit: BoxFit.cover,
-            image: AssetImage('assets/images/default_bg.png'))
+            image: AssetImage(
+                MyThemdata.isDarkEnable?'assets/images/dark_bg.png':
+                'assets/images/default_bg.png'))
       ),
         child: Scaffold(
           appBar: AppBar(

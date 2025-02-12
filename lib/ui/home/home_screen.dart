@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:test_islam_app/ui/MyThemData.dart';
 import 'package:test_islam_app/ui/home/Hadeth/hadeth_tab.dart';
 import 'package:test_islam_app/ui/home/Quran/quran_tab.dart';
 import 'package:test_islam_app/ui/home/Radio/radio_tab.dart';
+import 'package:test_islam_app/ui/home/Setting/setting_tab.dart';
 import 'package:test_islam_app/ui/home/Tasbeh/tasbeh_tab.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,7 +23,9 @@ int selectedTabIndex=0;
 
 
         image: DecorationImage(fit: BoxFit.cover,
-            image: AssetImage('assets/images/default_bg.png'))
+            image: AssetImage(
+              MyThemdata.isDarkEnable ?'assets/images/dark_bg.png':
+                'assets/images/default_bg.png'))
       ),
       child: Scaffold(
         appBar: AppBar(title: Text('islami'),
@@ -50,7 +54,8 @@ int selectedTabIndex=0;
               BottomNavigationBarItem(backgroundColor: Theme.of(context).primaryColor,
                   icon: ImageIcon(AssetImage('assets/images/radio_image.png'),),label: 'Radio'),
 
-
+BottomNavigationBarItem(backgroundColor: Theme.of(context).primaryColor,
+    icon: Icon(Icons.settings),label: 'settings'),
             ]),
         body: tabs[selectedTabIndex]
       ),
@@ -61,6 +66,7 @@ int selectedTabIndex=0;
     QuranTab(),
     HadethTab(),
     TasbehTab(),
-    RadioTab()
+    RadioTab(),
+    SettingTab(),
   ];
 }

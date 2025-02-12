@@ -21,7 +21,7 @@ ChapterTitleWidget(this.title,this.index ,{super.key});
         alignment: Alignment.center,
       padding: EdgeInsets.all(10),
 
-          child: Text(style: TextStyle(fontSize: 25,color: Colors.black),
+          child: Text(style: TextStyle(fontSize: 25,color: Colors.white),
               title)),
     );
   }

@@ -22,12 +22,13 @@ class _HadethTabState extends State<HadethTab> {
         Container(width: double.infinity,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-          border: Border.symmetric( horizontal: BorderSide(width: 2,color: Theme.of(context).primaryColor)),
+          border: Border.symmetric( horizontal: BorderSide(width: 2,color: Theme.of(context).dividerColor)),
 
 
         ),
-            child: Text('Hadeth',style: TextStyle(
+            child: Text('Hadeth',style: TextStyle(color: Colors.white,
               fontSize: 24
+
             ),)),
 Expanded(flex: 3,
   child: AllAhadeath.isEmpty ?Center(child: CircularProgressIndicator())
@@ -38,7 +39,7 @@ Expanded(flex: 3,
       },
       separatorBuilder: (context, index) {
         return Container(
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).dividerColor,
           width: double.infinity,
           height: 2,
           margin: EdgeInsets.symmetric(horizontal: 60),

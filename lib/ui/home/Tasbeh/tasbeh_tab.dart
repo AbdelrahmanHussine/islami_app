@@ -55,7 +55,7 @@ setState(() {
           ),
           Text(
             'Taspeh Number ',style: TextStyle(
-            color: Colors.black,
+            color: Theme.of(context).primaryColor,
             fontSize: 25,
             fontWeight: FontWeight.w600,
           ),),
@@ -70,7 +70,7 @@ color: Theme.of(context).primaryColor,
 
             ),
 
-            child: Text(conuter.toString(),style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400),),
+            child: Text(conuter.toString(),style: TextStyle(fontSize: 20,fontWeight: FontWeight.w400,color: Colors.white),),
           ),
           SizedBox(),
           Container(padding: EdgeInsets.all(10),
@@ -79,7 +79,7 @@ color: Theme.of(context).primaryColor,
             borderRadius: BorderRadius.circular(30),
             color: Theme.of(context).primaryColor,
           ),
-            child: Text(tasbehChange[index],style: TextStyle(
+            child: Text(tasbehChange[index],style: TextStyle(color: Colors.white,
               fontSize: 30,fontWeight: FontWeight.w200
             ),),
           ),
